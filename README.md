@@ -7,7 +7,7 @@ node app.js
 
 
 
-##CICD_TODO_App jusing AWS, Jenkins and Docker.
+                       ##CICD_TODO_App jusing AWS, Jenkins and Docker.
 
 1. Instance Created on AWS and connected on Ubuntu with public ip of the same ec2 instance.
 2. After the connection, java is installed first as Jenkins is built on java then Jenkins is installed.
@@ -15,7 +15,7 @@ node app.js
 4. As jenkins run on PORT:8080 ---> AWS --> Security Groups --> Inbound Rule --> PORT 8080 --> anywhere with IPV4 enabled.
 5. Again enable PORT:8000 as the application will run on this port: ---> AWS --> Security Groups --> Inbound Rule --> PORT 8000 --> anywhere with IPV4 enabled.
 
-##Jenkins
+                                    ##Jenkins
 Error: While installing plugins for Jenkins - faced plugin dependency cache already corruped error.
 
 Actions to resolve this issue: i. Restarted the Jenkins but it doesn't work as the restart only fixes service issues.
@@ -25,7 +25,7 @@ Installed git, docker --> and Jenkins added to docker group using - sudo usermod
 
 
 
-##Creating Jobs to Jenkins
+                                ##Creating Jobs to Jenkins
 
 a. Clicked on add new item (MyFirst CICD Todo App)
 b. Select an item type: Freestyle
@@ -39,7 +39,7 @@ But, when we exit - the app will not run --> This is where the Docker comes into
 
 
 
-##DOCKER
+                                   ##DOCKER
 The workflow is: Dockerfile ---> Docker image ---> Container ---> run applications.
 
 Dockerfile:- It contains instructions for build docker image such as Specifying base image, copying files
@@ -62,7 +62,7 @@ cmd to build image: docker build -t <image_name>:>tag> .  OR docker build -t <im
 
   Till now, we are doing the things manually like pushing the code to github, the building , creating docker image and deploying the app in container manually. But now, we will create the webhooks in the github and it will trigger the build whenever the code is pushed to github. the build will trigger the docker image and the app will run continuously.
 
-  ##Automatic Jenkins
+                                       ##Automatic Jenkins
 
   1. For that first we removed the created container ; docker rm -f <container_id>
   2. Webhook created on Github and the header of todo.ejs is changed.
