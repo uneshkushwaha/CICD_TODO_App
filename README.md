@@ -27,14 +27,14 @@ Installed git, docker --> and Jenkins added to docker group using - sudo usermod
 
                                 ##Creating Jobs to Jenkins
 
-a. Clicked on add new item (MyFirst CICD Todo App)
-b. Select an item type: Freestyle
-c. OK
-d. Source Code Management --> Repo --> Credentials --> SSH username with private key --> ssh-keygen
-e. cd ssh --> ls --> authorized keys : id_ed25519 and id_ed25519.pub
-f. Public key should be pasted in Github --> Settings > SSH and GPG key --> New SSH key, private should be paste in jenkins.
-g. Go to the path like : cd /var/lib/jenkins/workspace/MyFirst CICD TodoApp
-h. give command: node app.js --> As a result, the application will run on port 8000.
+- Clicked on add new item (MyFirst CICD Todo App)
+- Select an item type: Freestyle
+- OK
+- Source Code Management --> Repo --> Credentials --> SSH username with private key --> ssh-keygen
+- cd ssh --> ls --> authorized keys : id_ed25519 and id_ed25519.pub
+- Public key should be pasted in Github --> Settings > SSH and GPG key --> New SSH key, private should be paste in jenkins.
+- Go to the path like : cd /var/lib/jenkins/workspace/MyFirst CICD TodoApp
+- give command: node app.js --> As a result, the application will run on port 8000.
 But, when we exit - the app will not run --> This is where the Docker comes into the picture.
 
 
