@@ -42,9 +42,9 @@ But, when we exit - the app will not run --> This is where the Docker comes into
                                    ##DOCKER
 The workflow is: Dockerfile ---> Docker image ---> Container ---> run applications.
 
-Dockerfile:- It contains instructions for build docker image such as Specifying base image, copying files
-Docker Image:-
-Container:
+- Dockerfile:- It contains instructions for build docker image such as Specifying base image, copying files
+- Docker Image:-
+- Container:
 
 cmd to build image: docker build -t <image_name>:>tag> .  OR docker build -t <image_name>:<tag> -f <directoryname> .  
 
