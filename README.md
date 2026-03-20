@@ -15,7 +15,7 @@ node app.js
 4. As jenkins run on PORT:8080 ---> AWS --> Security Groups --> Inbound Rule --> PORT 8080 --> anywhere with IPV4 enabled.
 5. Again enable PORT:8000 as the application will run on this port: ---> AWS --> Security Groups --> Inbound Rule --> PORT 8000 --> anywhere with IPV4 enabled.
 
-## Jenkins
+##Jenkins
 Error: While installing plugins for Jenkins - faced plugin dependency cache already corruped error.
 
 Actions to resolve this issue: i. Restarted the Jenkins but it doesn't work as the restart only fixes service issues.
@@ -23,7 +23,10 @@ Actions to resolve this issue: i. Restarted the Jenkins but it doesn't work as t
 
 Installed git, docker --> and Jenkins added to docker group using - sudo usermod -aG dokcer Jenkins
 
+
+
 ##Creating Jobs to Jenkins
+
 a. Clicked on add new item (MyFirst CICD Todo App)
 b. Select an item type: Freestyle
 c. OK
@@ -34,8 +37,9 @@ g. Go to the path like : cd /var/lib/jenkins/workspace/MyFirst CICD TodoApp
 h. give command: node app.js --> As a result, the application will run on port 8000.
 But, when we exit - the app will not run --> This is where the Docker comes into the picture.
 
-##DOCKER
 
+
+##DOCKER
 The workflow is: Dockerfile ---> Docker image ---> Container ---> run applications.
 
 Dockerfile:- It contains instructions for build docker image such as Specifying base image, copying files
@@ -43,6 +47,7 @@ Docker Image:-
 Container:
 
 cmd to build image: docker build -t <image_name>:>tag> .  OR docker build -t <image_name>:<tag> -f <directoryname> .  
+
 - build means initiate the version , . represents the current directory lai build context ko lagi use garne (mostly indicate path or directory where the  dockerfile is ) and also build context means yo directory wa folder ma rahe ko sab kura lai liyear docker engine or docker dameon lai pathau build ko lagi.
 
                     - Once the build is complete:
