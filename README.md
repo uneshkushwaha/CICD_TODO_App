@@ -51,10 +51,10 @@ cmd to build image: docker build -t <image_name>:>tag> .  OR docker build -t <im
 - build means initiate the version , . represents the current directory lai build context ko lagi use garne (mostly indicate path or directory where the  dockerfile is ) and also build context means yo directory wa folder ma rahe ko sab kura lai liyear docker engine or docker dameon lai pathau build ko lagi.
 
                     - Once the build is complete:
-  docker ps --> shows all running containers
-  docker ps -a --> shows all running and stopped container as well.
-  docker run -d -p 8000:8000 todo-cicd
-  where -d: detached mode (run in background)
+ - docker ps --> shows all running containers
+ - docker ps -a --> shows all running and stopped container as well.
+ - docker run -d -p 8000:8000 todo-cicd
+ - where -d: detached mode (run in background)
         -p: port mapping , 8000(left):8000(right) --> left represents our system or ec2 or local machine where as right one represents inside the container
 
   Result: This time also app  run successfully  and we can easily add our work in our todo app. But, the interesting part is - this time app doesn't closed or stopped running even with exit the path of workspace in ec2. The app runs continuously.
