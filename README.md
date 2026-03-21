@@ -46,7 +46,7 @@ The workflow is: Dockerfile ---> Docker image ---> Container ---> run applicatio
 - Docker Image:-
 - Container:
 
-cmd to build image: docker build -t <image_name>:>tag> .  OR docker build -t <image_name>:<tag> -f <directoryname> .  
+-cmd to build image: docker build -t <image_name>:>tag> .  OR docker build -t <image_name>:<tag> -f <directoryname> .  
 
 - build means initiate the version , . represents the current directory lai build context ko lagi use garne (mostly indicate path or directory where the  dockerfile is ) and also build context means yo directory wa folder ma rahe ko sab kura lai liyear docker engine or docker dameon lai pathau build ko lagi.
 
